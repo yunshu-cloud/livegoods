@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="livegoods-eureka" />
+        <module name="livegoods-config-server" />
+        <module name="livegoods-banner" />
       </profile>
     </annotationProcessing>
   </component>
