@@ -9,14 +9,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="livegoods-buyaction" />
         <module name="livegoods-detail" />
-        <module name="livegoods-cache-redis" />
+        <module name="livegoods-order" />
+        <module name="livegoods-recommendation" />
         <module name="livegoods-buytime" />
+        <module name="livegoods-gateway" />
+        <module name="livegoods-mongodb-dao" />
+        <module name="livegoods-comment" />
+        <module name="livegoods-search" />
+        <module name="livegoods-cache-redis" />
+        <module name="livegoods-hot-product" />
         <module name="livegoods-eureka" />
         <module name="livegoods-config-server" />
         <module name="livegoods-commons" />
-        <module name="livegoods-gateway" />
+        <module name="livegoods-rabbit-publisher" />
+        <module name="livegoods-login" />
         <module name="livegoods-buyaction-message-consumer" />
-        <module name="livegoods-comment" />
         <module name="livegoods-banner" />
       </profile>
     </annotationProcessing>

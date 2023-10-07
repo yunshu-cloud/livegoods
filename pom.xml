@@ -19,6 +19,13 @@
         <module>livegoods-commons</module>
         <module>livegoods-detail</module>
         <module>livegoods-gateway</module>
+        <module>livegoods-hot-product</module>
+        <module>livegoods-login</module>
+        <module>livegoods-mongodb-dao</module>
+        <module>livegoods-order</module>
+        <module>livegoods-rabbit-publisher</module>
+        <module>livegoods-recommendation</module>
+        <module>livegoods-search</module>
     </modules>
     <version>1.0-SNAPSHOT</version>
 

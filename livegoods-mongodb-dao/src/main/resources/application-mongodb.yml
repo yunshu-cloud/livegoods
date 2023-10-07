@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      host: 121.43.236.238
+      port: 27017
+      username: root
+      password: root
+      database: livegoods
+      authentication-database: admin
