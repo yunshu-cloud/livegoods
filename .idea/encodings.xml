@@ -3,10 +3,26 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/livegoods-banner/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/livegoods-banner/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-buyaction-message-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-buyaction-message-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-buyaction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-buyaction/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-buytime/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-buytime/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-cache-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-cache-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-comment/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-comment/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-commons/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/livegoods-config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/livegoods-config-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-detail/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-detail/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/livegoods-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/livegoods-eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/livegoods-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

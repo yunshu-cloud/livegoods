@@ -1,0 +1,4 @@
+livegoods:
+  banner:
+    nginx:
+      prefix: 121.43.236.238:8888/

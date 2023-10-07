@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: livegoods-message-consumer
+#  profiles:
+#    active: itemCacheName,buyQueue,mongodb,redis
+  cloud:
+    config:
+      uri: http://localhost:9010
+      label: main
+      name: rabbit
+      profile: dev
