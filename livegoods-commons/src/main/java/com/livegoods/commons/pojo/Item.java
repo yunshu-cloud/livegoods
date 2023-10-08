@@ -7,6 +7,7 @@ import lombok.ToString;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Data
 @NoArgsConstructor
@@ -45,4 +46,10 @@ public class Item {
 
     // 是否出租
     private Boolean isRented;
+
+    //热门排序|权重，数学
+    private Byte recoSort;
+
+    // 房屋特性， Map集合。集合存储数据内容为： years: "建造年份", type: "房屋类型，几室几厅", level: "所在楼层", style: "装修标准", orientation: "房屋朝向"
+    private Map<String, String> info;
 }
