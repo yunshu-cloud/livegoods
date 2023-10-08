@@ -3,8 +3,8 @@ server:
 spring:
   application:
     name: livegoods-details
-#  profiles:
-    active: mongodb #,bannerNginx,redis
+  profiles:
+    active: mongodb ,bannerNginx,redis
   cloud:
     config:
       uri: http://localhost:9010
