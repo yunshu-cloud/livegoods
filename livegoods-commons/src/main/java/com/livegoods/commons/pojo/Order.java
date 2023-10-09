@@ -16,6 +16,9 @@ public class Order {
     // 用户手机号作为用户名
     private String username;
 
+    //商品主键
+    private String itemId;
+
     // 商品标题
     private String title;
 
