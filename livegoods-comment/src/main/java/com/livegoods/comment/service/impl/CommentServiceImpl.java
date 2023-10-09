@@ -7,7 +7,12 @@ import com.livegoods.commons.pojo.Comment;
 import com.livegoods.commons.pojo.Order;
 import com.livegoods.commons.vo.LivegoodsResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class CommentServiceImpl implements CommentService {
@@ -44,6 +49,38 @@ public class CommentServiceImpl implements CommentService {
         }
     }
 
+    /**
+     * 分页查询
+     * @param itemId
+     * @param page
+     * @param rows
+     * @return
+     */
+    @Override
+    public LivegoodsResult findCommentByItemId(String itemId, int page, int rows) {
+        Query query = new Query();
+        query.addCriteria(Criteria.where("itemId").is(itemId));
+        query.with(PageRequest.of(page,rows));
+
+        // 分页查询
+        List<Comment> commentByPageQuery = commentDao.findCommentByPageQuery(query);
+        long count = commentByPageQuery==null?0:commentByPageQuery.size();
+        // 隐藏用户名，手机号
+        for (Comment comment : commentByPageQuery) {
+            String username = comment.getUsername().replaceAll("(\\d{3})\\d{4}(\\d{4})", "$1****$2");
+            comment.setUsername(username);
+        }
+        LivegoodsResult result = LivegoodsResult.ok(commentByPageQuery);
+
+        // 计算总页数
+        long totalPages = (count % rows == 0) ? (count / rows) : (count / rows + 1);
+        if((page+1)<totalPages){
+            result.setHasMore(true);
+        }else{
+            result.setHasMore(false);
+        }
+        return result;
+    }
 
 
 }
